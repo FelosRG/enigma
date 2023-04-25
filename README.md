@@ -33,7 +33,7 @@ user@pc:$ enigma '<5&< <xF* >fwb< a)+S5A'
 Hola como estan todos!
 ```
 #### <div><b> Con configuración inicial</b></div>
-Para especificar la configuración inicial se puede usar una cadena de caracteres de por lo menos 3 caracteres de longitud. Puede ser cualquier caracter unicode válido.
+Para especificar la configuración inicial se puede usar una cadena de caracteres de por lo menos 3 caracteres de longitud. Al usar un string diferente se obtiene una codificación totalmente diferente del mismo texto.<br>
 
 ```
 user@pc:$ enigma 'cifrado1' 'Hola como estan todos!'
@@ -49,6 +49,26 @@ user@pc:$ enigma '&%*@' 'mgJ% Eg+) VId#$ WNpsr*'
 Hola como estan todos!
 ```
 
+*💫 Protip 1: Una manera de evitar que el comando se guarde en el historial del shell es escribir un espacio antes del comando es decir usar "&nbsp; enigma 'texto...'" en vez de "enigma 'texto...'".*
+
+### <div><b>Uso para generación de contraseña 🔒️</b></div>
+
+*⚠️ No soy experto en seguridad y solo es una prueba de concepto.*
+
+Supongamos que quieres generer alguna contraseña fuerte (mayusculas, minusculas, y caracteres especiales). Con enigma podemos generarnos una en base a otra contraseña mas facil de recordar que tengamos:
+
+```
+user@pc:$ enigma 'facebook' 'micontraseñafacil'
+b3Tn@WKGtUñcAH4bQ
+```
+
+Incluso podemos genar más para distintos sitios.
+```
+user@pc:$ enigma 'twitter' 'micontraseñafacil'
+ZD}9z7Wt~iñlr6{f]
+```
+
+*⚠️ Recomiendo personalizar las conexiones de los rotores si se usa el programa para este fin pues así nadie tendrá una maquina igual. Consultar la sección de guía de personalización.*
 
 ### <div><b> Instalación  ⚙️</b></div>
 
@@ -59,4 +79,5 @@ cargo install --git https://github.com/FelosRG/enigma
 Despues de la instalación se habilitará el comando *enigma*
 
 ### <div><b> Guía de Personalización </b></div>
+to do..
 
