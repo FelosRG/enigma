@@ -72,7 +72,15 @@ ZD}9z7Wt~iñlr6{f]
 
 ### <div><b> Instalación  ⚙️</b></div>
 
-Se necesita tener el compilador de rust instalado.
+Se necesita tener el compilador de rust instalado. Si no se tiene y se está en linux o MacOs:
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+Para más información o si se está en windows consultar la siguiente página: <br>
+🔗 https://www.rust-lang.org/tools/install
+
+Ya con el compilador de rust instalado basta con usar el siguiente comando para descargar y compilar el repositorio:
+
 ```
 cargo install --git https://github.com/FelosRG/enigma
 ```
