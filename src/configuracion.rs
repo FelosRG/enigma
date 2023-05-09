@@ -27,14 +27,19 @@ impl ConfiguraciónInicial{
 
         // Formamos los pares de intercambio con los ids.
         let mut pares: HashMap<usize,usize>  = HashMap::new();
-        for i in 0..ids_chars.len()-1{
-            let u1 = ids_chars[i];
-            let u2 = ids_chars[i+1];
-            if !pares.contains_key(&u1){
-                if !pares.contains_key(&u2){
-                    pares.insert(u1,u2);
-                    pares.insert(u2, u1);
 
+        // Solamente agregamos cosas si hay los carácteres para
+        // hacerlo.
+        if ids_chars.len() >= 1 {
+            for i in 0..ids_chars.len()-1{
+                let u1 = ids_chars[i];
+                let u2 = ids_chars[i+1];
+                if !pares.contains_key(&u1){
+                    if !pares.contains_key(&u2){
+                        pares.insert(u1,u2);
+                        pares.insert(u2, u1);
+
+                    }
                 }
             }
         }
