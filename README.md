@@ -2,9 +2,6 @@
   <img src="fig/Enigma-logo.png" height=100>
 </p>
 
-
-## <div align="center"><b><a href="README.md">Español 🇲🇽</a> | <a href="README_ENG.md">English 🇺🇸</a></b></div>
-
 La maquina enigma fue un dispositivo de cifrado de mensajes usado particularmente en la segunda guerra mundial por los alemanes. Fue considerada tan segura que era utilizada para cifrar los mensajes más sensibles durante la guerra. <br>
 
 
