@@ -83,6 +83,4 @@ cargo install --git https://github.com/FelosRG/enigma
 ```
 Despues de la instalación se habilitará el comando *enigma*
 
-### <div><b> Guía de Personalización </b></div>
-to do..
 
